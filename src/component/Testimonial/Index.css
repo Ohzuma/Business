@@ -1,0 +1,58 @@
+.Testimonials{
+    padding: 2rem 5rem;
+    background-color: #FAFAFA;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-section{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 2rem;
+}
+.slider{
+    background-image: 
+    url(/src/assets/image/bg-tablet-pattern.svg);
+    background-position:center;
+    background-size: contain ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    padding: 4rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 10px 1px rgba(211, 209, 209, 0.1);
+}
+.slider-header{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.slider-img{
+    width: 20%;
+    border-radius: 50%;
+}
+.slider-img img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+.slider-text p{
+    font-size: 1rem;
+    color: #999898;
+    line-height: 1.5rem;
+}
+.slider-name h2{
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    font-weight: 550;
+        color: #5d5d5d;
+}
+.slider-name small{
+    font-family: sans-serif;
+    margin-top: 5px;
+    color: #999898;
+}
