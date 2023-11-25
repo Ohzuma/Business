@@ -1,13 +1,13 @@
-import React from 'react'
-import './Pricing.css'
-import Pricing from './Pricing'
+import React from "react";
+import "./Pricing.css";
+import Pricing from "./Pricing";
 
 const Index = () => {
   return (
-    <>
-    <Pricing/>
-    </>
-  )
-}
+    <div id="pricing">
+      <Pricing />
+    </div>
+  );
+};
 
-export default Index
+export default Index;

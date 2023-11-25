@@ -1,59 +1,64 @@
-.footer{
-    padding: 1rem 7rem;
-    display: grid;
-    /* align-items: center; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    margin-top: 5rem;
-    /* margin: auto auto; */
-    place-content: center;
+.footer {
+  padding: 1rem 4rem;
+  display: grid;
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* margin-top: 5rem; */
+
+  place-content: center;
 }
-.footer-grid{
-    display: grid;
-    grid-template-columns:
-1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    /* justify-items: center; */
-    place-content: center;
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-column-gap: 3rem; */
+  justify-items: center;
+  grid-gap: 1rem;
+}
+.footer-item header h1 {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: rgb(21, 21, 21);
 }
 
-.footer-item header h1{
-font-size: 1.5rem;
-text-transform: capitalize;
-font-weight: 600;
-font-family: sans-serif;
-color: rgb(21, 21, 21);
+.footer-item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0rem;
+}
+.footer-item ul li a {
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: rgb(46, 46, 46);
+}
+.footer-item p {
+  color: rgb(62, 62, 62);
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+/* .footer-item:nth-child(1) p {
+  display: flex;
+  flex-direction: column;
+} */
 
+@media (max-width: 1010px) {
+  .footer {
+    place-content: start;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    justify-items: start;
+  }
 }
-.footer-item u{
-    margin-left: 0;
-}
-.footer-item ul{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-self: flex-start;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0rem;
-}
-.footer-item ul li{
-font-size: 1rem;
-font-family: sans-serif;
-color: rgb(46, 46, 46);
-}
-.footer-item p{
-color: rgb(62, 62, 62);
-line-height: 1.5rem;
-font-size: 1rem;
-font-family: sans-serif;
 
-}
-.footer-item:nth-child(1) p{
-display: flex;
-flex-direction: column;
-
-}
-.footer-item:nth-child(1){
-    width: 25rem;
+@media (max-width: 706px) {
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

@@ -1,13 +1,13 @@
-import React from 'react'
-import Testimonials from './Testimonials'
-import './Index.css'
+import React from "react";
+import Testimonials from "./Testimonials";
+import "./Index.css";
 
 const Index = () => {
   return (
-   <>
-   <Testimonials/>
-   </>
-  )
-}
+    <>
+      <Testimonials />
+    </>
+  );
+};
 
-export default Index
+export default Index;
