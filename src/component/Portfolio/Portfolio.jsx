@@ -28,12 +28,6 @@ const Portfolio = () => {
       <header className="ServiceHeading">
         <h3 className="global_h3">Our Portfolio</h3>
         <h1>Our Recent Works</h1>
-        <p>
-          <span>
-            There are many variations of passages of Lorem Ipsum available,
-          </span>
-          <span> but the majority have suffered alteration in some form.</span>
-        </p>
       </header>
 
       <Categories categories={categories} filterItem={filterItem} />

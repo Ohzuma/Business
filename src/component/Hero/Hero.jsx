@@ -1,41 +1,39 @@
-import React from 'react'
-import HeroImg from '../../assets/image/3.jpg'
-import {AiFillPlayCircle} from 'react-icons/ai'
+import React from "react";
+import HeroImg from "../../assets/image/3.jpg";
+import { AiFillPlayCircle } from "react-icons/ai";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
 
 const Hero = () => {
   return (
-    <section className='hero-section'>
-        <div className="hero-container">
-            <div className="rh">
+    <section className="hero-section">
+      <div className="hero-container">
+        <div className="rh">
           <article>
-          <h1><span>Corporate & Business   </span>
-            <span>Site Template by Ayro UI.</span>
-          </h1>
-                <p>
-                      We are a digital agency that helps brands
-                      to achieve their business outcomes. 
-                     We see technology as a tool to create
-                  amazing things. 
-                </p>
-                <div>
-                    <button type='button'>
-                        GET STARTED
-                    </button>
-                    <a href='/'>
-                        <AiFillPlayCircle/>
-                        <span> Watch Intro</span>
-                    </a>
+            <h1>
+              <span>we transform your digital ideas </span>
+              <span>into reality With a team of skilled professionals</span>
+            </h1>
+            <p>
+              As a leading provider of web services, we bring innovation,
+              expertise, and a commitment to excellence to every project."
+            </p>
+            <div>
+              <a href="tel:08163686235">
+                <FiPhone />
+                <span>CALL US</span>
+              </a>
 
-                </div>
+              <a href="https://wa.me/2348163686235">
+                <FaWhatsapp />
+                <span>WhatsApp Us</span>
+              </a>
+            </div>
           </article>
-            </div>
-            <div className="lh">
-                <img src={HeroImg} alt="Lady Hero" />
-            </div>
         </div>
-
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -15,6 +15,7 @@ const Menu = ({ item }) => {
             <div className="filter-text">
               <h1>{title}</h1>
               <p>{desc}</p>
+              <a href="/">See More &gt; &gt;</a>
             </div>
           </div>
         );

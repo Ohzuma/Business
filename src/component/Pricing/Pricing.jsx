@@ -6,12 +6,6 @@ const Pricing = () => {
       <header className="ServiceHeading">
         <h3 className="global_h3">Price Plan</h3>
         <h1>Pricing & Plans</h1>
-        <p>
-          <span>
-            There are many variations of passages of Lorem Ipsum available,
-          </span>
-          <span> but the majority have suffered alteration in some form.</span>
-        </p>
       </header>
       <div className="priceList">
         {Item.map((item, i) => {

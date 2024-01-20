@@ -5,14 +5,8 @@ const Client = () => {
   return (
     <section className="Client">
       <header className="ServiceHeading">
-        <h3 className="global_h3">Meet our Clients</h3>
+        <h3 className="global_h3">our Clients</h3>
         <h1>Our Awesome Clients</h1>
-        <p>
-          <span>
-            There are many variations of passages of Lorem Ipsum available,
-          </span>
-          <span> but the majority have suffered alteration in some form.</span>
-        </p>
       </header>
       <div className="grid-temp">
         <div className="client">

@@ -12,91 +12,113 @@
   place-content: center;
 }
 .Team-box {
-  box-shadow: 1px 0.5px 5px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
+  /* box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 10px; */
+  box-shadow: 2px 1px 15px 1px rgba(112, 112, 112, 0.1);
+  background-color: #fff;
+  max-width: 350px;
+  width: 350px;
+  transition: 0.5s;
+  /* transform: scale(0.9); */
+}
+
+.Team-box:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .team-img {
   width: 100%;
+  height: 200px;
+  /* object-fit: cover; */
 }
 .team-img img {
   width: 100%;
-  border-radius: 10px;
   height: 100%;
+  object-fit: cover;
 }
-.info {
-  background-color: #fff;
-  position: absolute;
-  width: 100%;
-  margin-top: -120px;
-  border-radius: 0px 0px 10px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.author-name {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  z-index: 1;
-}
-.author-name h3 {
-  margin-bottom: 0px;
-  font-size: 1.2rem;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-family: sans-serif;
-}
-.author-name p {
-  margin-top: 0px;
-  font-size: 1.1rem;
-  color: var(--primary);
-}
-.info::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  visibility: hidden;
-  position: absolute;
-  padding-top: 2rem;
-  transition: 0.5s ease-in-out;
-}
-.Team-box:hover .info::before {
-  background-color: var(--primary);
-  visibility: visible;
-  transition: 0.5s ease-in-out;
-}
-.author-social {
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  width: 250px;
-  height: 100px;
 
-  background-color: #fff;
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
+  position: relative;
+}
+
+.profile_name {
+  position: absolute;
+  top: -30px;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.9rem 2rem;
+  height: 20px;
+  width: 220px;
+  max-width: 250px;
+}
+
+.profile_name h2 {
+  margin-bottom: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.profile_name p {
+  margin-top: 0;
+  color: #fff;
+}
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.profile_info p {
+  width: 200px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.profile_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.profile_contact div {
+  display: flex;
+  justify-content: space-between;
+
+  /* flex-direction: column; */
+}
+.profile_contact div span:nth-of-type(1) {
+  /* background-color: var(--primary); */
+  background-color: rgb(24, 22, 22);
+
+  color: #fff;
+  padding: 0.3rem;
+  width: 35px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
-  transition: 0.5s ease-in;
-  box-shadow: 1px 0.5px 5px 1px rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
 }
-.Team-box:hover .info .author-name h3 {
-  color: #fff;
+.profile_contact div span:nth-of-type(2) {
+  font-size: 0.9rem;
 }
-.Team-box:hover .info .author-name p {
-  color: #fff;
-}
-.Team-box:hover .author-social {
-  visibility: visible;
-  transition: 0.5s ease-in;
+.profile_contact div span:nth-of-type(2)::after {
+  content: "";
+  max-width: 300px;
+  height: 1px;
+  background-color: rgb(27, 27, 27);
+  display: block;
+  margin-top: 2px;
+  font-size: 0.8rem;
 }
 .GetStarted {
   display: flex;
@@ -110,29 +132,30 @@
   padding: 5rem 0rem;
 }
 .GetStarted div {
-  width: 45%;
+  max-width: 45%;
 }
 .GetStarted div header h1 {
   font-size: 2.5rem;
-  font-family: interSemiBold;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 3rem;
   color: #fff;
+  text-transform: capitalize;
 }
 .GetStarted div p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5rem;
   color: #fff;
+  letter-spacing: 1px;
 }
 .GetStarted div button {
   width: 200px;
   height: 50px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #fff;
   background-color: transparent;
   border: 1px solid #fff;
-  border-radius: 4px;
+  border-radius: 35px;
   transition: 0.5s;
   margin-top: 2rem;
 }
@@ -145,15 +168,21 @@
   .Team {
     padding: 0rem 2rem;
   }
+  .Team-box:nth-child(2) {
+    transform: scale(1);
+  }
+  .Team-box {
+    transform: scale(1);
+  }
   .Team-box {
     width: 100%;
   }
-  GetStarted {
+  .GetStarted {
     padding: 2rem;
   }
   .GetStarted div {
-    width: 100%;
-    padding: 2rem;
+    max-width: 100%;
+    padding: 0rem;
   }
   .GetStarted div header h1 {
     font-size: 1.8rem;

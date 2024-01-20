@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-import LogoImg from "../../assets/image/white-logo.svg";
+import LogoImg from "../../assets/image/logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
 
 const Navbar = () => {
+  const [showNav, setShowNav] = useState(false);
   return (
     <header>
       <div className="navbar">
-        <nav>
-          <div className="logo">
+        <div className="logo">
+          <Link to="home" spy={true} smoth={true}>
             <img src={LogoImg} alt="logo" />
-          </div>
+          </Link>
+        </div>
+        <nav className={`${showNav ? "active" : ""}`}>
           <ul className="nav">
             <li>
               <Link
@@ -80,8 +85,21 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          <div className="actionBtn">
+            <a href="https://wa.me/2348163686235">
+              <span>
+                <FaWhatsapp />
+              </span>
+            </a>
+            <a href="tel:08163686235">
+              <span>
+                <FiPhone />
+              </span>
+            </a>
+          </div>
         </nav>
-        <div className="navburger">
+
+        <div className="navburger" onClick={() => setShowNav(!showNav)}>
           <span>
             <GiHamburgerMenu />
           </span>

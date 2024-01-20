@@ -7,7 +7,6 @@ const Index = () => {
   return (
     <div id="service" data-aos="fade-up">
       <Service />
-      <WatchIntro />
     </div>
   );
 };

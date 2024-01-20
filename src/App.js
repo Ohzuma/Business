@@ -8,7 +8,7 @@ import ServiceIndex from "./component/Service/Index";
 import PortIndex from "./component/Portfolio/Index";
 import Pricing from "./component/Pricing/Index";
 import TeamIndex from "./component/Team/Index";
-import Testimonials from "./component/Testimonial/Index";
+// import Testimonials from "./component/Testimonial/Index";
 import Blog from "./component/Blog/Index";
 import Client from "./component/Clinet/Index";
 import Contact from "./component/Contact/Index";
@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     Aos.init({
       debounceDelay: 50,
-      offset: 300,
+      offset: 100,
       delay: 10,
       duration: 500,
       easing: "ease",
@@ -32,7 +32,7 @@ function App() {
       <PortIndex />
       <Pricing />
       <TeamIndex />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Blog />
       <Client />
       <Contact />

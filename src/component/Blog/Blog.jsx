@@ -8,12 +8,6 @@ const Testimonials = () => {
       <header className="ServiceHeading">
         <h3 className="global_h3">Lastes News</h3>
         <h1>Latest News & Blog</h1>
-        <p>
-          <span>
-            There are many variations of passages of Lorem Ipsum available,
-          </span>
-          <span> but the majority have suffered alteration in some form.</span>
-        </p>
       </header>
 
       <div className="Blog-section">
